@@ -1,0 +1,14 @@
+set window-title-basename true
+set window-title-page true
+set smooth-scroll false
+set zoom-center false
+set font sans
+
+set default-bg "#1C1C1C"
+
+
+set recolor-darkcolor "#A1A1A1"
+set recolor-lightcolor "#1C1C1C"
+set recolor-reverse-video true
+
+map c set recolor
