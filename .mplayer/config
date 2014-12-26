@@ -1,0 +1,21 @@
+aspect = 16:9
+
+#Fullscreen
+fs = yes
+
+#audio output
+ao = pulse
+
+#video output
+vo = vdpau
+
+#colored terminal output
+msgcolor = yes
+
+ass = yes
+use-filename-title = yes
+
+ass-color = "ffffff00"
+ass-border-color = "00000000"
+#vf = screenshot
+#ontop = yes
