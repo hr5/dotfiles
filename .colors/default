@@ -1,0 +1,28 @@
+!Colors
+*foreground : #999
+*background : #17171B
+!Black
+*color0 : #1A1A1A
+*color8 : #2B2B2B
+!Red
+*color1 : #BF3422
+*color9 : #FF462D
+!Green
+*color2 : #65BA3E
+*color10 : #90FF63
+!Yellow
+*color3 : #D0A900
+*color11 : #FFCF00
+!Blue
+*color4 : #1A4896
+*color12 : #589BFF
+!Magenta
+*color5 : #963B37
+*color13 : #FF645E
+!Cyan
+*color6 : #38BBD0
+*color14 : #5FFCFF
+!White
+*color7 : #CCCCCC
+*color15 : #ffffff
+
