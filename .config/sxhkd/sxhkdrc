@@ -1,0 +1,104 @@
+#
+# bspwm hotkeys
+#
+
+alt + shift + e
+	pkill bar && bspc quit
+
+alt + shift + q
+	bspc window -c
+
+alt + b
+  bspc desktop -B
+
+alt + {s,f}:
+  bspc window -t {floating,fullscreen}
+
+alt + l:
+  bspc window -s last
+
+alt + {_,shift + }{1-9,0}
+	bspc {desktop -f,window -d} ^{1-9,10}
+
+alt + button{1-3}
+	bspc pointer -g {move,resize_side,resize_corner}
+
+alt + !button{1-3}
+	bspc pointer -t %i %i
+
+alt + @button{1-3}
+	bspc pointer -u
+
+~button1
+	bspc pointer -g focus
+
+ctrl + ~button4
+  bspc desktop -f next
+
+ctrl + ~button5
+  bspc desktop -f prev
+
+ctrl + Right
+  bspc desktop -f next
+
+ctrl + Left
+  bspc desktop -f prev
+
+alt + ~button4
+  bspc window -f next
+
+alt + ~button5
+  bspc window -f prev
+
+alt + {Left,Down,Up,Right}
+  bspc window -f {left,down,up,right}
+
+alt + shift + {Left,Down,Up,Right}
+  bspc window -s {left,down,up,right}
+
+alt + ctrl + {h,j,k,l}
+	bspc window -p {left,down,up,right}
+
+alt + ctrl + {_,shift + }space
+	bspc {window -p cancel,desktop -c}
+
+super + t
+	bspc desktop -l next
+
+#super + x ; {f,c,u,g,n,v}
+#  {firefox,chromium,urxvt,gvim,nautilus,virtualbox}
+#
+#super + shift + x ; {n}
+#  {nautilus}
+
+#
+# wm independent hotkeys
+#
+
+alt + Return
+	urxvt
+
+alt + space
+	dmenu_run
+
+super + f
+  firefox
+
+super + c
+  chromium
+
+super + u
+  urxvt
+
+super + g
+  gvim
+
+super + n
+  nautilus
+
+super + v
+  virtualbox
+
+# make sxhkd reload its configuration files:
+alt + shift + r
+	pkill -USR1 -x sxhkd
