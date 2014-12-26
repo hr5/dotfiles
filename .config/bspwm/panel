@@ -1,0 +1,7 @@
+#! /bin/sh
+#
+# Example panel for LemonBoy's bar
+
+
+trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
+python -u ~/.config/bspwm/bspwm-bar/main.py | bar -p
