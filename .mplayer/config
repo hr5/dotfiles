@@ -1,13 +1,15 @@
 aspect = 16:9
 
-#Fullscreen
 fs = yes
+cache = 20000
 
 #audio output
 ao = pulse
 
 #video output
 vo = vdpau
+vc = ffmpeg12vdpau,ffwmv3vdpau,ffvc1vdpau,ffh264vdpau,ffodivxvdpau
+fixed-vo = yes
 
 #colored terminal output
 msgcolor = yes
