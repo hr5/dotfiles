@@ -1,0 +1,9 @@
+
+"\C-a": menu-complete
+
+#history completion
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+#get manual page
+"\eh": "\C-a\eb\ed\C-y\e#man \C-y\C-m\C-p\C-p\C-a\C-d\C-e"
