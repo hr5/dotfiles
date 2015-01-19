@@ -21,6 +21,7 @@ alias tar='tar --format="posix"'
 
 . ~/.scripts/termcolor
 
-#PS1="\n$Purple\u ${cr}at $Yellow\h ${cr}in $Cyan\w${cr}\n$ "
-#PS1="${Blue}»${cr} "
-#PS1="[${Blue}\u${cr}@${Green}\h${cr}]-[\w] "
+#PS1="\[$Green\]\w \[$Yellow\]»\[${cr}\] "
+#PS1="\n\[$Purple\]\u \[$cr\]at \[$Yellow\]\h \[$cr\]in \[$Cyan\]\w\[$cr\]\n$ "
+#PS1="\[$Blue\]»\[$cr\] "
+PS1="[\[$Blue\]\u\[$cr\]@\[$Green\]\h\[$cr\]]-[\w] "
