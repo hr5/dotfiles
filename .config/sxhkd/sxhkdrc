@@ -3,10 +3,13 @@
 #
 
 alt + shift + e
-	pkill bar && bspc quit
+	pkill bar;bspc quit
 
 alt + shift + q
 	bspc window -c
+
+alt + d
+  dmenu_run
 
 alt + b
   bspc desktop -B
@@ -95,9 +98,6 @@ super + g
 
 super + n
   nautilus
-
-super + v
-  virtualbox
 
 # make sxhkd reload its configuration files:
 alt + shift + r
