@@ -1,0 +1,8 @@
+video-aspect = 16:9
+fullscreen = yes
+
+ao = pulse
+hwdec = vdpau
+
+screenshot-format = "png"
+screenshot-template = "%F%04n"
