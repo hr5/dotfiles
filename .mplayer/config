@@ -1,22 +1,19 @@
-aspect = 16:9
+aspect=16:9
 
-fs = yes
+fs=yes
 cache = 20000
 
-#audio output
-ao = pulse
+ao=pulse
 
-#video output
-vo = vdpau
-fixed-vo = yes
+vo=vdpau
+fixed-vo=yes
 
-#colored terminal output
-msgcolor = yes
+msgcolor=yes
 
-ass = yes
-use-filename-title = yes
+ass=yes
+use-filename-title=yes
 
-ass-color = "ffffff00"
-ass-border-color = "00000000"
+ass-color="ffffff00"
+ass-border-color="00000000"
 #vf = screenshot
 #ontop = yes
