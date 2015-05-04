@@ -1,0 +1,6 @@
+--retries 3
+--buffer-size 32K
+--o "%(title)s.%(ext)s"
+
+--audio-quality 0
+--audio-format "opus"
