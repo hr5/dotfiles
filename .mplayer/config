@@ -3,12 +3,15 @@ aspect=16:9
 fs=yes
 cache = 20000
 
-ao=pulse
+ao=alsa
+mixer-channel=Master
+softvol=no
 
 vo=vdpau
 fixed-vo=yes
 
 msgcolor=yes
+msgmodule=yes
 
 ass=yes
 use-filename-title=yes
