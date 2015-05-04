@@ -3,10 +3,15 @@ fullscreen=yes
 
 cache=50000
 
-ao=pulse
+ao=alsa:mixer-name=Master
+softvol=no
+
 vo=vdpau
 hwdec=vdpau
 ass-force-style=Kerning=yes
 
 screenshot-format="png"
 screenshot-template="%F%04n"
+
+embeddedfonts=yes
+sub-gray=yes
