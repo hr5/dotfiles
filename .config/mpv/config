@@ -1,17 +1,44 @@
 video-aspect=16:9
 fullscreen=yes
+msg-color=yes
+save-position-on-quit=yes
 
-cache=50000
+#Cache
+cache=auto
+cache-default=80000
+cache-initial=1000
+cache-seek-min=2000
 
+#Audio
 ao=alsa:mixer-name=Master
 softvol=no
 
-vo=vdpau
-hwdec=vdpau
-ass-force-style=Kerning=yes
+#Video
+vo=opengl
+hwdec=vda
 
+#Screenshot
 screenshot-format="png"
-screenshot-template="%F%04n"
+screenshot-template="%F %04n"
 
+#OSD
+osd-font="Clear Sans Bold"
+osd-color="#FFFFFFFF"
+osd-spacing=0.5
+osd-border-size=2.5
+osd-border-color="#FF262626"
+osd-shadow-offset=1
+osd-shadow-color="#33000000"
+osd-bar=no
+
+#Subtitle
+sub-text-font="Clear Sans Bold"
+sub-text-color="#FFFFFFFF"
+sub-text-spacing=0.5
+sub-text-border-size=2.5
+sub-text-border-color="#FF262626"
+sub-text-shadow-offset=1
+sub-text-shadow-color="#33000000"
+
+ass-force-style=Kerning=yes
 embeddedfonts=yes
-sub-gray=yes
