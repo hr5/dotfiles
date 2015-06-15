@@ -14,9 +14,9 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source ~/.scripts/config.sh
+source ~/.config/sh/config.sh
 
-PROMPT="
-%{$fg[green]%}%n%{$reset_color%} at %{$fg[yellow]%}%M%{$reset_color%} in %{$fg[blue]%}%~%{$reset_color%}
-> "
+bindkey "^[[A" up-line-or-search
+bindkey "^[[B" down-line-or-search
 
+PROMPT="%{$fg[red]%}%~ %{$fg[blue]%}» %{$reset_color%}"
