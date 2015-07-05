@@ -6,7 +6,8 @@ shopt -s dirspell
 shopt -s extglob
 shopt -s cdspell
 
-HISTSIZE=-1
+HISTSIZE=10000
+HISTFILESIZE=10000
 
 . ~/.config/sh/config.sh
 
