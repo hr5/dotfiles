@@ -13,20 +13,20 @@ xterm*saveLines: 8192
 
 !urxvt conf
 URxvt.scrollBar: false
-!URxvt.transparent: true
-!URxvt.shading: 25
+
 URxvt.font:xft:monospace:size=11
 URxvt.boldfont:xft:monospace:size=11
+
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: xdg-open
 URxvt.matcher.button: 1
 URxvt.colorUL: #87b776
+
 URxvt.letterSpace: -1
-
-URxvt.geometry: 147x45
-
+URxvt.modifier: alt
+URxvt.geometry: 160x48
 
 #include ".colors/jellybeans"
-!*background: #1B1B1B
+!*background: #242424
 !*foreground: #AAAAAA
 
