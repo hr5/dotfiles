@@ -13,7 +13,7 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc config focus_by_distance true
 
-bspc monitor -d Main Term Text Web Media Misc File Chat Game System
+bspc monitor -d Main Term Text Web Media File Chat Game Misc System
 
 bspc rule -a Chromium desktop=Web
 bspc rule -a Firefox desktop=Web
@@ -22,4 +22,4 @@ bspc rule -a mpv desktop=Media
 bspc rule -a Vlc desktop=Media
 bspc rule -a URxvt desktop=Term
 bspc rule -a Gnome-terminal desktop=Term
-bspc rule -a Gvim desktop=Media
+bspc rule -a Gvim desktop=Text
