@@ -32,7 +32,6 @@ font pango:Bitstream Vera Sans 10
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
 mouse_warping output
-new_window 1pixel
 workspace_auto_back_and_forth yes
 force_display_urgency_hint 500 ms
 
@@ -42,12 +41,12 @@ exec --no-startup-id "nitrogen --restore"
 set $bgcolor "#222222"
 #set $bgcolor "#151515"
 
-# class                 border  backgr. text    indicator
-client.focused          #4e9a06 #306030 #ffffff #006000
+new_window 1pixel
+
+client.focused          #4e9a06 #555555 #ffffff #555555
 client.unfocused        #333333 #222222 #888888 #292d2e
 client.focused_inactive #333333 #222222 #888888 #292d2e
-client.urgent           #2f343a #900000 #ffffff #900000
-
+client.urgent           #2f343a #905050 #ffffff #905050
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -129,8 +128,8 @@ set $WS4 "4:Web"
 set $WS5 "5:Media"
 set $WS6 "6:File"
 set $WS7 "7:Chat"
-set $WS8 "8:Misc"
-set $WS9 "9:Game"
+set $WS8 "8:Game"
+set $WS9 "9:Misc"
 set $WS10 "10:System"
 
 bindsym $mod+1 workspace $WS1
@@ -159,11 +158,15 @@ bindsym $mod+Shift+0 move container to workspace $WS10
 for_window [class="File-roller"] floating enable
 
 assign [class="Gnome-terminal|URxvt"] $WS2
-assign [class="Chromium|Firefox"] $WS4
-assign [class="mpv|MPlayer"] $WS5
-assign [class="Vimb|Dwb"] $WS4
 assign [class="Gvim"] $WS3
-assign [class="Hexchat"] $WS7
+assign [class="Chromium|Firefox"] $WS4
+assign [class="Vimb|Dwb"] $WS4
+assign [class="mpv|MPlayer"] $WS5
+
+for_window [class="File-roller"] floating enable
+for_window [class="mpv"] floating enable
+for_window [class="MPlayer"] floating enable
+for_window [class="Sxiv"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
