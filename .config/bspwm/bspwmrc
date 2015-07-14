@@ -13,7 +13,7 @@ bspc config borderless_monocle true
 bspc config gapless_monocle true
 bspc config focus_by_distance true
 
-bspc monitor -d Main Term Text Web Media File Chat Game Misc System
+bspc monitor -d Main Term Text Web Media Misc
 
 bspc rule -a Chromium desktop=Web
 bspc rule -a Firefox desktop=Web
