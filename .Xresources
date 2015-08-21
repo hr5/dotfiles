@@ -16,21 +16,23 @@ xterm*geometry: 160x48
 xterm*decTerminalID: vt220
 
 !urxvt conf
+URxvt.termName: rxvt-256color
 URxvt.scrollBar: false
+URxvt.font: xft:monospace:size=10
+URxvt.boldfont: xft:monospace:size=10
 
-URxvt.font:xft:monospace:size=11
-URxvt.boldfont:xft:monospace:size=11
-
+URxvt.urgentOnBell: true
+URxvt.saveLines: 8192
 URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: xdg-open
 URxvt.matcher.button: 1
-URxvt.colorUL: #87b776
 
+URxvt.colorUL: #87b776
 URxvt.letterSpace: -1
 URxvt.modifier: alt
 URxvt.geometry: 160x48
 
-#include ".colors/jellybeans"
+#include ".config/termcolors/hybrid"
 !*background: #242424
 !*foreground: #AAAAAA
 
