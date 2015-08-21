@@ -1,5 +1,11 @@
+set bell-style none
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set skip-completed-text on
 
-"\C-a": menu-complete
+Tab: complete
+"\e[Z": menu-complete
 
 #history completion
 "\e[A": history-search-backward
