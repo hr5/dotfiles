@@ -10,6 +10,10 @@ Xft.lcdfilter : lcddefault
 xterm*termName: xterm-256color
 xterm*faceName: monospace:size=10
 xterm*saveLines: 8192
+xterm*locale: true
+xterm*metaSendsEscape: true
+xterm*geometry: 160x48
+xterm*decTerminalID: vt220
 
 !urxvt conf
 URxvt.scrollBar: false
