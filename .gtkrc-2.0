@@ -1,6 +1,6 @@
-gtk-theme-name="Adwaita"
-gtk-icon-theme-name="Faba-Lutu"
-gtk-font-name="sans 10"
+gtk-theme-name="Ambiance-Flat-Graphite"
+gtk-icon-theme-name="Numix"
+gtk-font-name="Sans 10"
 gtk-button-images=1
 gtk-menu-images=1
 gtk-enable-event-sounds=1
