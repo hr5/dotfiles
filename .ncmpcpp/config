@@ -1,12 +1,20 @@
+#Format
 song_list_format = " {$2%a$4 – }{$7%t}$R{$3%l$9}"
 song_columns_list_format = "(3f)[green]{n} (40)[default]{t|f} (25)[red]{a} (30)[blue]{b} (4f)[green]{l}"
 song_status_format = "$2%a $6:: $4%t $6:: $3%b$8"
-
 user_interface = "classic"
-playlist_display_mode = "classic"
-header_visibility = "yes"
+playlist_display_mode = "columns"
 now_playing_suffix ="$/b"
+header_visibility = "yes"
+
+#General
 display_bitrate = "yes"
+browser_sort_mode = "name"
+incremental_seeking = "yes"
+use_console_editor = "yes"
+jump_to_now_playing_song_at_start = "yes"
+header_text_scrolling = "yes"
+regular_expressions = "extended"
 
 #progressbar_look = "░█ "
 #progressbar_look = "⠒⠒⠐"
