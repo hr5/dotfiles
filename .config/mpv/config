@@ -30,6 +30,7 @@ osd-border-color="#FF262626"
 osd-shadow-offset=1
 osd-shadow-color="#33000000"
 osd-bar=no
+script-opts=osc-layout=bottombar,osc-seekbarstyle=bar
 
 #Subtitle
 sub-text-font="Clear Sans Bold"
