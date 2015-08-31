@@ -12,4 +12,5 @@ HISTFILESIZE=10000
 . ~/.config/sh/config.sh
 
 #PS1="\[$IGreen\]\w \[$Cyan\]»\[${cr}\] "
-PS1="\[$IGreen\]\w\[$Cyan\] >\[${cr}\] "
+#PS1="\[$IGreen\]\w\[$Cyan\] >\[${cr}\] "
+PS1="\[$IGreen\]\w \[$Cyan\]λ\[${cr}\] "
