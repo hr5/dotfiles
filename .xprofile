@@ -1,1 +1,5 @@
+#!/bin/sh
+export QT_STYLE_OVERRIDE='GTK+'
+
+compton &
 xrdb ~/.Xresources
