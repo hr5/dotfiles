@@ -89,6 +89,7 @@ set wildmenu              " enhanced cmd line completion
 set wildchar=<TAB>TAB     " key for line completion
 set completeopt=longest,menuone   " Autocompletion options
 set complete=.,w,b,u,t,i,d        " autocomplete options (:help 'complete')
+set omnifunc=syntaxcomplete#Complete
 
 " gVim
 if has('gui_running')
@@ -119,5 +120,5 @@ function RunWith (command)
   execute "!clear;" . a:command . " " . expand("%")
 endfunction
 
-autocmd FileType ruby   nmap <F5> :call RunWith("ruby")<CR>
-autocmd FileType python   nmap <F5> :call RunWith("python")<CR>
+autocmd FileType ruby   nmap <Leader>r :call RunWith("ruby")<CR>
+autocmd FileType python   nmap <Leader>r :call RunWith("python")<CR>
