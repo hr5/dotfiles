@@ -20,6 +20,7 @@ Plugin 'dagwieers/asciidoc-vim'
 
 " Haskell
 Plugin 'raichoo/haskell-vim'
+Plugin 'lukerandall/haskellmode-vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
@@ -40,8 +41,16 @@ let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.readonly = 'r'
 let g:airline_symbols.linenr = 'line'
 
+let g:slimv_leader = '\'
+let g:paredit_leader = '\'
+
+let g:haddock_browser="/usr/bin/firefox"
+
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
 let &titleold = getcwd()
 let mapleader = ','
+let maplocalleader = '\'
 
 filetype plugin indent on
 syntax on
@@ -109,6 +118,7 @@ nnoremap <Leader>bs :buffers<CR>:buffer<Space>
 nnoremap <Leader>bl :ls<CR>
 nnoremap <Leader>bn :bn<CR>
 nnoremap <Leader>bp :bp<CR>
+nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>bg :e#<CR>
 nnoremap <Leader>B <C-^>
 
@@ -122,3 +132,4 @@ endfunction
 
 autocmd FileType ruby   nmap <Leader>r :call RunWith("ruby")<CR>
 autocmd FileType python   nmap <Leader>r :call RunWith("python")<CR>
+au BufEnter *.hs compiler ghc
