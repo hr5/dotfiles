@@ -1,11 +1,12 @@
 #Format
-song_list_format = " {$2%a$4 – }{$7%t}$R{$3%l$9}"
+song_list_format = "{$2%a$4 – $7%t$R$3%l$9}|{$7%f$R$3%l$9}"
 song_columns_list_format = "(3f)[green]{n} (40)[default]{t|f} (25)[red]{a} (30)[blue]{b} (4f)[green]{l}"
-song_status_format = "$2%a $6:: $4%t $6:: $3%b$8"
+song_status_format = "{$2%a $6:: $4%t $6:: $3%b$8}|{$4%f$9}"
 user_interface = "classic"
 playlist_display_mode = "columns"
 now_playing_suffix ="$/b"
 header_visibility = "yes"
+alternative_header_second_line_format = "{$2%a $6:: $4%t $6:: $3%b$8}|{$4%f$9}"
 
 #General
 display_bitrate = "yes"
