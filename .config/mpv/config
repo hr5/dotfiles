@@ -1,45 +1,45 @@
-video-aspect=16:9
-fullscreen=yes
-msg-color=yes
-save-position-on-quit=yes
+video-aspect = 16:9
+fullscreen = yes
+msg-color = yes
+save-position-on-quit = yes
 
 #Cache
-cache=auto
-cache-default=80000
-cache-initial=1000
-cache-seek-min=2000
+cache = auto
+cache-default = 80000
+cache-initial = 1000
+cache-seek-min = 2000
 
 #Audio
-ao=alsa:mixer-name=Master
-softvol=no
+ao = alsa:mixer-name=Master
+softvol = no
 
 #Video
-vo=opengl
-hwdec=vda
+vo = opengl
+hwdec = vda
 
 #Screenshot
-screenshot-format="png"
-screenshot-template="%F %04n"
+screenshot-format = "png"
+screenshot-template = "%F %04n"
 
 #OSD
-osd-font="Clear Sans Bold"
-osd-color="#FFFFFFFF"
-osd-spacing=0.5
-osd-border-size=2.5
-osd-border-color="#FF262626"
-osd-shadow-offset=1
-osd-shadow-color="#33000000"
-osd-bar=no
-script-opts=osc-layout=bottombar,osc-seekbarstyle=bar
+osd-font = "Clear Sans Bold"
+osd-color = "#FFFFFFFF"
+osd-spacing = 0.5
+osd-border-size = 2.5
+osd-border-color = "#FF262626"
+osd-shadow-offset = 1
+osd-shadow-color = "#33000000"
+osd-bar = no
+script-opts = osc-layout=bottombar,osc-seekbarstyle=bar
 
 #Subtitle
-sub-text-font="Clear Sans Bold"
-sub-text-color="#FFFFFFFF"
-sub-text-spacing=0.5
-sub-text-border-size=2.5
-sub-text-border-color="#FF262626"
-sub-text-shadow-offset=1
-sub-text-shadow-color="#33000000"
+sub-text-font = "Clear Sans Bold"
+sub-text-color = "#FFFFFFFF"
+sub-text-spacing = 0.5
+sub-text-border-size = 2.5
+sub-text-border-color = "#FF262626"
+sub-text-shadow-offset = 1
+sub-text-shadow-color = "#33000000"
 
-ass-force-style=Kerning=yes
-embeddedfonts=yes
+ass-force-style = Kerning = yes
+embeddedfonts = yes
