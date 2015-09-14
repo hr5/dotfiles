@@ -1,22 +1,22 @@
-aspect=16:9
+aspect = 16:9
 
-fs=yes
-cache = 20000
+fs = yes
+cache  =  20000
 
-ao=alsa
-mixer-channel=Master
-softvol=no
+ao = alsa
+mixer-channel = Master
+softvol = no
 
-vo=vdpau
-fixed-vo=yes
+vo = vdpau
+fixed-vo = yes
 
-msgcolor=yes
-msgmodule=yes
+msgcolor = yes
+msgmodule = yes
 
-ass=yes
-use-filename-title=yes
+ass = yes
+use-filename-title = yes
 
-ass-color="ffffff00"
-ass-border-color="00000000"
-#vf = screenshot
-#ontop = yes
+ass-color = "ffffff00"
+ass-border-color = "00000000"
+#vf  =  screenshot
+#ontop  =  yes
