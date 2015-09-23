@@ -41,12 +41,15 @@ let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.readonly = 'r'
 let g:airline_symbols.linenr = 'line'
 
+"Slimv
 let g:slimv_leader = '\'
 let g:paredit_leader = '\'
 
 let g:haddock_browser="/usr/bin/firefox"
 
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+let g:pymode_warnings = 1
+let g:syntastic_cpp_compiler_options = "-std=c++11"
 
 let &titleold = getcwd()
 let mapleader = ','
@@ -112,10 +115,12 @@ endif
 
 nnoremap <C-b> <C-^>
 nnoremap <C-d> :bdelete<CR>
+nnoremap <C-h> :bp<CR>
+nnoremap <C-l> :bn<CR>
+
 
 " Buffer selection
 nnoremap <Leader>bs :buffers<CR>:buffer<Space>
-nnoremap <Leader>bl :ls<CR>
 nnoremap <Leader>bn :bn<CR>
 nnoremap <Leader>bp :bp<CR>
 nnoremap <Leader>bd :bd<CR>
