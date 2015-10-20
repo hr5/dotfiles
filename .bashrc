@@ -1,6 +1,8 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+. /usr/share/bash-completion/bash_completion
+
 shopt -s autocd
 shopt -s dirspell
 shopt -s extglob
