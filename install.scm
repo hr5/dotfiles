@@ -3,57 +3,60 @@
 (use section-combinators)
 (use srfi-1)
 
-(define (make-dirs dirs) 
+(define (make-directorys directorys)
   (map (right-section create-directory #t) 
-       dirs))
+       directorys))
 
-(define (basedir dir root)
-  (string-substitute (string-append "^" root "/*") 
+(define (base-directory directory root-directory)
+  (string-substitute (string-append "^" root-directory "/*") 
                      ""
-                     dir))
+                     directory))
 
-(define (absolute-path dir) 
+(define (absolute-path directory)
   (let ((cwd (current-directory))
-        (apath (and (change-directory dir)
+        (abs-path (and (change-directory directory)
                     (current-directory))))
     (change-directory cwd)
-    (string-append apath "/")))
+    (string-append abs-path "/")))
 
-(define (make-link src dst #!optional (overwrite? #t)) 
+(define (make-link source destination #!optional (overwrite-files? #t)) 
   (condition-case 
-    (begin (create-symbolic-link src dst) 
-           (display (string-append src 
+    (begin (create-symbolic-link source destination) 
+           (display (string-append source 
                                    " -> " 
-                                   dst)) 
+                                   destination)) 
            (newline)) 
-    ((exn i/o file) (if overwrite? 
+    ((exn i/o file) (if overwrite-files? 
                       (begin (display "[Overwrite] ")
-                             (delete-file dst)
-                             (make-link src dst #t))
+                             (delete-file destination)
+                             (make-link source destination #t))
                       (display "File exists, ignored")))))
 
-(define (exclude? file) 
-  (string-search "git" file))
+(define (exclude-file? file)
+  (or (string-search "git" file)
+      (string-search "install" file)))
 
-(define (main src 
-              dst 
+(define (main source 
+              destination 
               #!optional (overwrite #f))
-  (let ((source-dirs (find-files src 
-                                 test: (lambda (file) (and (directory? file) 
-                                                           (not (exclude? file)))) 
+  (let ((source-directorys (find-files source 
+                                 test: (lambda (file)
+                                         (and (directory? file)
+                                              (not (exclude-file? file)))) 
                                  dotfiles: #t))
-        (source-files (find-files src 
-                                  test: (lambda (file) (and (regular-file? file) 
-                                                            (not (exclude? file))))
+        (source-files (find-files source 
+                                  test: (lambda (file)
+                                          (and (regular-file? file)
+                                               (not (exclude-file? file))))
                                   dotfiles: #t))
-        (remove-src (right-section basedir src)))
-    (change-directory dst)
-    (make-dirs (map remove-src source-dirs))
+        (remove-source (right-section base-directory source)))
+    (change-directory destination)
+    (make-directorys (map remove-source source-directorys))
     (map make-link 
          source-files
          (map (lambda (file) 
-                (string-append dst file)) 
-              (map remove-src source-files)))))
+                (string-append destination file)) 
+              (map remove-source source-files)))))
 
 
 (define args 
@@ -61,7 +64,13 @@
         (+ 1 (list-index (left-section equal? (program-name)) 
                          (argv)))))
 
+(define help-message "install.scm source destination")
+
 (if (<  (length args) 2) 
-  (error "Too Few Args")
-  (main (absolute-path (list-ref args 0)) 
-        (absolute-path (list-ref args 1))))
+  (error (string-append "Too Few Args"
+                        "\n"
+                        help-message))
+  (let ((source-directory (list-ref args 0))
+        (destination-directory (list-ref args 1))) 
+   (main (absolute-path source-directory)
+         (absolute-path destination-directory))))
