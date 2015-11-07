@@ -1,7 +1,7 @@
 aspect = 16:9
 
 fs = yes
-cache  =  20000
+cache  =  100000
 
 ao = alsa
 mixer-channel = Master
@@ -17,6 +17,7 @@ ass = yes
 use-filename-title = yes
 
 ass-color = "ffffff00"
-ass-border-color = "00000000"
+ass-border-color = "141414"
+ass-force-style = FontName=ClearSans-Bold,Bold=1,Outline=1.2,Shadow=1,BackColour=&HC8000000
 #vf  =  screenshot
 #ontop  =  yes
