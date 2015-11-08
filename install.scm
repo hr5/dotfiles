@@ -52,12 +52,12 @@
         (remove-source (right-section base-directory source)))
     (change-directory destination)
     (make-directorys (map remove-source source-directorys))
-    (map make-link 
-         source-files
-         (map (lambda (file) 
-                (string-append destination file)) 
-              (map remove-source source-files)))))
-
+    (let ((destination-files (map (lambda (file)
+                                    (string-append destination (remove-source file)))
+                                  source-files)))
+      (map make-link
+           source-files
+           destination-files))))
 
 (define args 
   (drop (argv) 
