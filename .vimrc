@@ -10,22 +10,23 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
 Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
-Plugin 'Shougo/neocomplete.vim'
 Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'dagwieers/asciidoc-vim'
+Plugin 'Chiel92/vim-autoformat'
 
 Plugin 'kovisoft/slimv'
 Plugin 'klen/python-mode'
-Plugin 'dagwieers/asciidoc-vim'
 
 " Haskell
-Plugin 'raichoo/haskell-vim'
+Plugin 'neovimhaskell/haskell-vim'
 Plugin 'lukerandall/haskellmode-vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'sjl/badwolf'
+Plugin 'mkarmona/colorsbox'
 
 call vundle#end()
 
@@ -44,12 +45,17 @@ let g:airline_symbols.linenr = 'line'
 "Slimv
 let g:slimv_leader = '\'
 let g:paredit_leader = '\'
+let g:paredit_electric_return = 0
 
+"haskellmode-vim
 let g:haddock_browser="/usr/bin/firefox"
 
-let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:pymode_warnings = 1
+"syntastic
 let g:syntastic_cpp_compiler_options = "-std=c++11"
+
+"vim-autoformat
+let g:formatdef_haskell = '"hindent --style johan-tibell"'
+let g:formatters_haskell = ['haskell']
 
 let &titleold = getcwd()
 let mapleader = ','
@@ -60,7 +66,7 @@ syntax on
 
 set t_Co=256              "256 Color
 set background=dark
-colorscheme gruvbox
+colorscheme colorsbox-stnight
 
 set noshowmode
 set showtabline=2
@@ -111,6 +117,7 @@ if has('gui_running')
     set guioptions-=b               " remove bottom scrollbar
     set guioptions-=L               " remove left scrollbar
     set guicursor+=a:block-blinkon0 " use solid block cursor
+    set guiheadroom=0
 endif
 
 nnoremap <C-b> <C-^>
@@ -118,23 +125,12 @@ nnoremap <C-d> :bdelete<CR>
 nnoremap <C-h> :bp<CR>
 nnoremap <C-l> :bn<CR>
 
-
 " Buffer selection
 nnoremap <Leader>bs :buffers<CR>:buffer<Space>
-nnoremap <Leader>bn :bn<CR>
-nnoremap <Leader>bp :bp<CR>
-nnoremap <Leader>bd :bd<CR>
 nnoremap <Leader>bg :e#<CR>
-nnoremap <Leader>B <C-^>
 
 nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>f :AutoFormat<CR>
 
-function RunWith (command)
-  execute "w"
-  execute "!clear;" . a:command . " " . expand("%")
-endfunction
-
-autocmd FileType ruby   nmap <Leader>r :call RunWith("ruby")<CR>
-autocmd FileType python   nmap <Leader>r :call RunWith("python")<CR>
 au BufEnter *.hs compiler ghc
