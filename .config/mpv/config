@@ -4,8 +4,8 @@ msg-color = yes
 save-position-on-quit = yes
 
 #Cache
-cache = auto
-cache-default = 80000
+cache = yes
+cache-default = 100000
 cache-initial = 1000
 cache-seek-min = 2000
 
@@ -15,7 +15,7 @@ softvol = no
 
 #Video
 vo = opengl
-hwdec = vda
+hwdec = vdpau
 
 #Screenshot
 screenshot-format = "png"
