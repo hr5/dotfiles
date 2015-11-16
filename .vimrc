@@ -54,7 +54,7 @@ let g:haddock_browser="/usr/bin/firefox"
 let g:syntastic_cpp_compiler_options = "-std=c++11"
 
 "vim-autoformat
-let g:formatdef_haskell = '"hindent --style johan-tibell"'
+let g:formatdef_haskell = '"hindent --style chris-done"'
 let g:formatters_haskell = ['haskell']
 
 let &titleold = getcwd()
@@ -131,6 +131,6 @@ nnoremap <Leader>bg :e#<CR>
 
 nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
-nnoremap <Leader>f :AutoFormat<CR>
+nnoremap <Leader>f :Autoformat<CR>
 
 au BufEnter *.hs compiler ghc
