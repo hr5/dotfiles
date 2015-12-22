@@ -42,6 +42,10 @@ let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.readonly = 'r'
 let g:airline_symbols.linenr = 'line'
 
+"pymode
+let g:pymode_lint = 0
+let g:pymode_rope_completion = 0
+
 "Slimv
 let g:slimv_leader = '\'
 let g:paredit_leader = '\'
@@ -124,10 +128,8 @@ nnoremap <C-b> <C-^>
 nnoremap <C-d> :bdelete<CR>
 nnoremap <C-h> :bp<CR>
 nnoremap <C-l> :bn<CR>
-
-" Buffer selection
-nnoremap <Leader>bs :buffers<CR>:buffer<Space>
-nnoremap <Leader>bg :e#<CR>
+nnoremap <C-j> :tp<CR>
+nnoremap <C-k> :tn<CR>
 
 nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
