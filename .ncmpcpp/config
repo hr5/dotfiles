@@ -28,4 +28,4 @@ volume_color = "white"
 visualizer_look = "●▋"
 visualizer_type = "wave" (spectrum/wave)
 visualizer_color = "magenta"
-visualizer_sync_interval = "1"
+visualizer_sync_interval = "10"
