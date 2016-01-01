@@ -129,7 +129,7 @@ bindsym $mod+a focus parent
 set $WS1 "1:Main"
 set $WS2 "2:Term"
 set $WS3 "3:Text"
-set $WS4 "4:Web"
+set $WS4 "4:Net"
 set $WS5 "5:Media"
 set $WS6 "6:Misc"
 
@@ -168,6 +168,7 @@ for_window [class="File-roller"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="MPlayer"] floating enable
 for_window [class="Sxiv"] floating enable
+for_window [class="Gvim"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -206,7 +207,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         #status_command "i3status"
-        status_command "python -u ~/.i3/bar/main.py"
+        status_command "py-i3bar"
         strip_workspace_numbers yes
         workspace_buttons yes
         position bottom
