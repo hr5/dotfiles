@@ -31,8 +31,7 @@ font pango:Bitstream Vera Sans 10
 # clear in small sizes. However, its unicode glyph coverage is limited, the old
 # X core fonts rendering does not support right-to-left and this being a bitmap
 # font, it doesn’t scale on retina/hidpi displays.
-mouse_warping output
-workspace_auto_back_and_forth yes
+#mouse_warping output
 force_display_urgency_hint 500 ms
 
 #Set Wallpaper
@@ -159,8 +158,8 @@ bindsym $mod+Shift+6 move container to workspace $WS6
 for_window [class="File-roller"] floating enable
 
 assign [class="Gnome-terminal|URxvt"] $WS2
-assign [class="Gvim"] $WS3
 assign [class="Chromium|Firefox"] $WS4
+assign [class="Gvim"] $WS3
 assign [class="Vimb|Dwb"] $WS4
 assign [class="mpv|MPlayer"] $WS5
 
@@ -168,7 +167,6 @@ for_window [class="File-roller"] floating enable
 for_window [class="mpv"] floating enable
 for_window [class="MPlayer"] floating enable
 for_window [class="Sxiv"] floating enable
-for_window [class="Gvim"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
