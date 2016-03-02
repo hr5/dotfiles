@@ -14,13 +14,8 @@ Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dagwieers/asciidoc-vim'
 Plugin 'Chiel92/vim-autoformat'
-
-Plugin 'kovisoft/slimv'
+Plugin 'rust-lang/rust.vim'
 Plugin 'klen/python-mode'
-
-" Haskell
-Plugin 'neovimhaskell/haskell-vim'
-Plugin 'lukerandall/haskellmode-vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
@@ -90,9 +85,8 @@ set showmode              " show mode
 set lazyredraw            " Don't redraw while executing macros (good performance config)
 
 "Tab
-set softtabstop=4
 set shiftwidth=4
-set expandtab 
+set tabstop=4
 
 " Folding
 set foldignore=           " don't ignore anything when folding
@@ -115,13 +109,13 @@ set omnifunc=syntaxcomplete#Complete
 
 " gVim
 if has('gui_running')
-    set guioptions-=m               " remove menu
-    set guioptions-=T               " remove toolbar
-    set guioptions-=r               " remove right scrollbar
-    set guioptions-=b               " remove bottom scrollbar
-    set guioptions-=L               " remove left scrollbar
-    set guicursor+=a:block-blinkon0 " use solid block cursor
-    set guiheadroom=0
+	set guioptions-=m               " remove menu
+	set guioptions-=T               " remove toolbar
+	set guioptions-=r               " remove right scrollbar
+	set guioptions-=b               " remove bottom scrollbar
+	set guioptions-=L               " remove left scrollbar
+	set guicursor+=a:block-blinkon0 " use solid block cursor
+	set guiheadroom=0
 endif
 
 nnoremap <C-b> <C-^>
