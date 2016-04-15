@@ -16,6 +16,7 @@ Plugin 'dagwieers/asciidoc-vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'rust-lang/rust.vim'
 Plugin 'klen/python-mode'
+Plugin 'neovimhaskell/haskell-vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
@@ -50,7 +51,7 @@ let g:paredit_electric_return = 0
 let g:haddock_browser="/usr/bin/firefox"
 
 "syntastic
-let g:syntastic_cpp_compiler_options = "-std=c++11"
+let g:syntastic_cpp_compiler_options = "-std=c++14"
 
 "vim-autoformat
 let g:formatdef_haskell = '"hindent --style chris-done"'
@@ -85,8 +86,8 @@ set showmode              " show mode
 set lazyredraw            " Don't redraw while executing macros (good performance config)
 
 "Tab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Folding
 set foldignore=           " don't ignore anything when folding
@@ -129,4 +130,4 @@ nnoremap <Leader>g :GundoToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>f :Autoformat<CR>
 
-au BufEnter *.hs compiler ghc
+au BufEnter *.hs set expandtab
