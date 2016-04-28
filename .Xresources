@@ -1,5 +1,5 @@
 !xft settings
-Xft.dpi: 96
+Xft.dpi: 100
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
@@ -32,7 +32,7 @@ URxvt.letterSpace: -1
 URxvt.modifier: alt
 URxvt.geometry: 160x48
 
-#include ".config/termcolors/hybrid"
+#include ".config/termcolors/base16-tomorrow-dark"
 !*background: #242424
 !*foreground: #AAAAAA
 
