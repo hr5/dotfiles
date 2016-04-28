@@ -6,8 +6,6 @@ save-position-on-quit = yes
 #Cache
 cache = yes
 cache-default = 100000
-cache-initial = 1000
-cache-seek-min = 2000
 
 #Audio
 ao = alsa:mixer-name=Master
