@@ -10,6 +10,7 @@ cache-default = 100000
 #Audio
 ao = alsa:mixer-name=Master
 softvol = no
+audio-display = no
 
 #Video
 vo = opengl
@@ -41,3 +42,11 @@ sub-text-shadow-color = "#33000000"
 
 ass-force-style = Kerning = yes
 embeddedfonts = yes
+
+[extension.mp3]
+save-position-on-quit = no
+resume-playback = no
+
+[extension.flac]
+save-position-on-quit = no
+resume-playback = no
