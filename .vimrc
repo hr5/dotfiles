@@ -51,7 +51,7 @@ let g:paredit_electric_return = 0
 let g:haddock_browser="/usr/bin/firefox"
 
 "syntastic
-let g:syntastic_cpp_compiler_options = "-std=c++14"
+let g:syntastic_cpp_compiler_options = "-std=c++1z"
 
 "vim-autoformat
 let g:formatdef_haskell = '"hindent --style chris-done"'
