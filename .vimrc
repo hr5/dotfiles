@@ -7,7 +7,8 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'ervandew/supertab'
@@ -27,7 +28,7 @@ Plugin 'mkarmona/colorsbox'
 call vundle#end()
 
 "Airline
-let g:airline_theme = 'bubblegum'
+let g:airline_theme = 'base16'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_symbols = {}
 let g:airline_left_sep = ''
