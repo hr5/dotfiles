@@ -11,13 +11,15 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
-Plugin 'ervandew/supertab'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dagwieers/asciidoc-vim'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'rust-lang/rust.vim'
 Plugin 'klen/python-mode'
 Plugin 'neovimhaskell/haskell-vim'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
@@ -38,6 +40,11 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.readonly = 'r'
 let g:airline_symbols.linenr = 'line'
+
+"snipmate
+let g:snipMate = get(g:, 'snipMate', {}) " Allow for vimrc re-sourcing
+let g:snipMate.scope_aliases = {}
+let g:snipMate.snippet_version = 1
 
 "pymode
 let g:pymode_lint = 0
