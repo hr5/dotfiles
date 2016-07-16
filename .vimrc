@@ -12,15 +12,17 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'dagwieers/asciidoc-vim'
 Plugin 'Chiel92/vim-autoformat'
-Plugin 'rust-lang/rust.vim'
-Plugin 'klen/python-mode'
-Plugin 'neovimhaskell/haskell-vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+
+"Languages
+Plugin 'neovimhaskell/haskell-vim'
+Plugin 'klen/python-mode'
+Plugin 'rust-lang/rust.vim'
 Plugin 'zah/nim.vim'
+Plugin 'dagwieers/asciidoc-vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
