@@ -20,6 +20,7 @@ Plugin 'neovimhaskell/haskell-vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'zah/nim.vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
