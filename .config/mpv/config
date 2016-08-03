@@ -49,3 +49,11 @@ resume-playback = no
 [extension.flac]
 save-position-on-quit = no
 resume-playback = no
+
+[extension.pls]
+save-position-on-quit = no
+resume-playback = no
+
+[protocol.http]
+save-position-on-quit = no
+resume-playback = no
