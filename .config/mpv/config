@@ -9,7 +9,6 @@ cache-default = 100000
 
 #Audio
 ao = alsa:mixer-name=Master
-softvol = no
 audio-display = no
 
 #Video
