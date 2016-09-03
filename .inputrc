@@ -4,12 +4,12 @@ set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set skip-completed-text on
 
-Tab: complete
-"\e[Z": menu-complete
+Tab: menu-complete
 
 #history completion
 "\e[A": history-search-backward
 "\e[B": history-search-forward
+"\C-n": "urxvt &\n"
 
 #get manual page
 "\eh": "\C-a\eb\ed\C-y\e#man \C-y\C-m\C-p\C-p\C-a\C-d\C-e"
