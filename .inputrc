@@ -4,8 +4,6 @@ set show-all-if-ambiguous on
 set show-all-if-unmodified on
 set skip-completed-text on
 
-Tab: menu-complete
-
 #history completion
 "\e[A": history-search-backward
 "\e[B": history-search-forward
