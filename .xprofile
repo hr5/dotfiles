@@ -1,5 +1,8 @@
 #!/bin/sh
 export QT_STYLE_OVERRIDE='GTK+'
+export GTK_IM_MODULE='xim'
+export QT_IM_MODULE='xim'
 
 compton &
 xrdb ~/.Xresources
+xmodmap ~/.Xmodmap
