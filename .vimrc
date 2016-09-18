@@ -89,8 +89,10 @@ set lazyredraw            " Don't redraw while executing macros (good performanc
 set autoindent
 
 "Tab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+set expandtab
 
 " Folding
 set foldignore=           " don't ignore anything when folding
@@ -113,13 +115,13 @@ set omnifunc=syntaxcomplete#Complete
 
 " gVim
 if has('gui_running')
-	set guioptions-=m               " remove menu
-	set guioptions-=T               " remove toolbar
-	set guioptions-=r               " remove right scrollbar
-	set guioptions-=b               " remove bottom scrollbar
-	set guioptions-=L               " remove left scrollbar
-	set guicursor+=a:block-blinkon0 " use solid block cursor
-	set guiheadroom=0
+    set guioptions-=m               " remove menu
+    set guioptions-=T               " remove toolbar
+    set guioptions-=r               " remove right scrollbar
+    set guioptions-=b               " remove bottom scrollbar
+    set guioptions-=L               " remove left scrollbar
+    set guicursor+=a:block-blinkon0 " use solid block cursor
+    set guiheadroom=0
 endif
 
 nnoremap <C-b> <C-^>
