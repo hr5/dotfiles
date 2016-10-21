@@ -75,6 +75,7 @@ set ruler                 " show cursor line number
 set showmode              " show mode
 set lazyredraw            " Don't redraw while executing macros (good performance config)
 set autoindent
+set colorcolumn=80
 
 "Tab
 set shiftwidth=4
