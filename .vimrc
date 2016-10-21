@@ -9,17 +9,15 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
 Plugin 'sjl/gundo.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Chiel92/vim-autoformat'
 
 "Languages
-Plugin 'neovimhaskell/haskell-vim'
 Plugin 'klen/python-mode'
 Plugin 'rust-lang/rust.vim'
 Plugin 'zah/nim.vim'
 Plugin 'dagwieers/asciidoc-vim'
+Plugin 'udalov/kotlin-vim'
 
 "Colorscheme
 Plugin 'morhetz/gruvbox'
@@ -49,16 +47,6 @@ let g:pymode_rope_completion = 0
 let g:slimv_leader = '\'
 let g:paredit_leader = '\'
 let g:paredit_electric_return = 0
-
-"haskellmode-vim
-let g:haddock_browser="/usr/bin/firefox"
-
-"syntastic
-let g:syntastic_cpp_compiler_options = "-std=c++1z"
-
-"vim-autoformat
-let g:formatdef_haskell = '"hindent --style chris-done"'
-let g:formatters_haskell = ['haskell']
 
 let &titleold = getcwd()
 let mapleader = ','
