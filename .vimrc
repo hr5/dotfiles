@@ -11,6 +11,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sjl/gundo.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'optroot/auto-pairs'
 
 "Languages
 Plugin 'klen/python-mode'
@@ -38,6 +39,9 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.readonly = 'r'
 let g:airline_symbols.linenr = 'line'
+
+"AutoPairs
+let g:AutoPairsOnlyAtEOL = 1
 
 "pymode
 let g:pymode_lint = 0
@@ -75,6 +79,8 @@ set ruler                 " show cursor line number
 set showmode              " show mode
 set lazyredraw            " Don't redraw while executing macros (good performance config)
 set autoindent
+set smartindent
+set cindent
 set colorcolumn=80
 
 "Tab
