@@ -8,7 +8,8 @@ cache = yes
 cache-default = 100000
 
 #Audio
-ao = alsa:mixer-name=Master
+ao = alsa
+alsa-mixer-name = Master
 audio-display = no
 
 #Video
@@ -30,15 +31,15 @@ osd-shadow-color = "#33000000"
 osd-bar = no
 
 #Subtitle
-sub-text-font = "Clear Sans Bold"
-sub-text-color = "#FFFFFFFF"
-sub-text-spacing = 0.5
-sub-text-border-size = 2.5
-sub-text-border-color = "#FF262626"
-sub-text-shadow-offset = 1
-sub-text-shadow-color = "#33000000"
+sub-font = "Clear Sans Bold"
+sub-color = "#FFFFFFFF"
+sub-spacing = 0.5
+sub-border-size = 2.5
+sub-border-color = "#FF262626"
+sub-shadow-offset = 1
+sub-shadow-color = "#33000000"
 
-ass-force-style = Kerning = yes
+sub-ass-force-style = Kerning = yes
 embeddedfonts = yes
 
 [extension.mp3]
