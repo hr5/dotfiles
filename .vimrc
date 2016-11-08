@@ -11,7 +11,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sjl/gundo.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'optroot/auto-pairs'
 
 "Languages
 Plugin 'klen/python-mode'
