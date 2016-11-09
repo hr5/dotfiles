@@ -1,5 +1,5 @@
 !xft settings
-Xft.dpi: 100
+Xft.dpi: 105
 Xft.antialias: true
 Xft.hinting: true
 Xft.rgba: rgb
@@ -8,7 +8,7 @@ Xft.lcdfilter : lcddefault
 
 !xterm
 xterm*termName: xterm-256color
-xterm*faceName: monospace:size=10
+xterm*faceName: monospace:size=12
 xterm*saveLines: 8192
 xterm*locale: true
 xterm*metaSendsEscape: true
@@ -18,8 +18,8 @@ xterm*decTerminalID: vt220
 !urxvt conf
 URxvt.termName: rxvt-256color
 URxvt.scrollBar: false
-URxvt.font: xft:monospace:size=10
-URxvt.boldfont: xft:monospace:size=10
+URxvt.font: xft:monospace:size=12
+URxvt.boldfont: xft:monospace:size=12
 
 URxvt.urgentOnBell: true
 URxvt.saveLines: 8192
@@ -33,6 +33,5 @@ URxvt.modifier: alt
 URxvt.geometry: 160x48
 
 #include ".config/termcolors/base16-tomorrow-dark"
-!*background: #242424
-!*foreground: #AAAAAA
-
+!*background: #ffffff
+!*foreground: #000000
