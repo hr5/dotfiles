@@ -1,0 +1,5 @@
+"set hintchars=asdfghjkl
+let mapleader = ","
+map p <Nop>
+
+" vim: set ft=vimperator:
