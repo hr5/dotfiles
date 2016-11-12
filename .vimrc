@@ -11,6 +11,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'sjl/gundo.vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
 
 "Languages
 Plugin 'klen/python-mode'
@@ -39,8 +42,8 @@ let g:airline_symbols.branch = 'branch'
 let g:airline_symbols.readonly = 'r'
 let g:airline_symbols.linenr = 'line'
 
-"AutoPairs
-let g:AutoPairsOnlyAtEOL = 1
+"SnipMate
+let g:snipMate_snippet_version = 1
 
 "pymode
 let g:pymode_lint = 0
@@ -109,6 +112,7 @@ set omnifunc=syntaxcomplete#Complete
 
 " gVim
 if has('gui_running')
+    set guifont=Fira\ Mono\ 11
     set guioptions-=m               " remove menu
     set guioptions-=T               " remove toolbar
     set guioptions-=r               " remove right scrollbar
