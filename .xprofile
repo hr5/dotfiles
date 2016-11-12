@@ -6,3 +6,4 @@ export QT_IM_MODULE='xim'
 compton &
 xrdb ~/.Xresources
 xmodmap ~/.Xmodmap
+redshift-gtk &
