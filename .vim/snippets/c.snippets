@@ -1,0 +1,53 @@
+snippet if
+	if (${1:expr}) {
+		${0}
+	}
+
+snippet else
+	else {
+		${0}
+	}
+
+snippet while
+	while (${1:expr}) {
+		${0}
+	}
+
+snippet for
+	for (${1:init}; ${2:cond}; ${3:change}) {
+		${0}
+	}
+
+snippet fn
+	${1:type} ${2:name}(${3}) {
+		${0}
+	}
+
+snippet Fn
+	${1:type} ${2:name}(void) {
+		${0}
+	}
+
+snippet include
+	#include <${1:header}>${0}
+
+snippet Include
+	#include "${1:header}"${0}
+
+snippet struct
+	typedef struct {
+		${0}
+	} ${1:name};
+
+snippet enum
+	typedef enum {
+		${0}
+	} ${1:name};
+
+snippet ifndef
+	#ifndef ${1:headername}
+	#define $1
+
+	${0}
+
+	#endif
