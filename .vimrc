@@ -82,7 +82,6 @@ set showmode              " show mode
 set lazyredraw            " Don't redraw while executing macros (good performance config)
 set autoindent
 set smartindent
-set cindent
 set colorcolumn=80
 
 "Tab
@@ -112,7 +111,7 @@ set omnifunc=syntaxcomplete#Complete
 
 " gVim
 if has('gui_running')
-    set guifont=Fira\ Mono\ 11
+    set guifont=Source\ Code\ Pro\ 11
     set guioptions-=m               " remove menu
     set guioptions-=T               " remove toolbar
     set guioptions-=r               " remove right scrollbar
