@@ -10,4 +10,4 @@ export MANPATH="/usr/share/man:$LOCALPATH/share/man"
 export GOPATH="$LOCALPATH/share/go"
 export CHICKEN_REPOSITORY="$LOCALPATH/lib/chicken"
 
-export PATH="$PATH:$LOCALPATH/bin:$HOME/.gem/ruby/2.2.0/bin"
+export PATH="$PATH:$LOCALPATH/bin"
