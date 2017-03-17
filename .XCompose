@@ -1,4 +1,46 @@
-<Multi_key> <s> <i> : "Σ" # Greek Small Letter Sigma
-<Multi_key> <l> <a> : "λ" # Greek Small Letter Lambda
-<Multi_key> <p> <i> : "π" # Greek Small Letter Pi
-<Multi_key> <l> <l> : "ℓ" # Script Small L
+<Multi_key> <a> <quotedbl> : "ä" # Latin small letter a with diaeresis
+<Multi_key> <A> <quotedbl> : "Ä" # Latin capital letter A with diaeresis
+<Multi_key> <o> <quotedbl> : "ö" # Latin small letter o with diaeresis
+<Multi_key> <O> <quotedbl> : "Ö" # Latin capital letter O with diaeresis
+<Multi_key> <u> <quotedbl> : "ü" # Latin small letter u with diaeresis
+<Multi_key> <U> <quotedbl> : "Ü" # Latin capital letter U with diaeresis
+<Multi_key> <s> <s> : "ß" # Latin small letter sharp s
+<Multi_key> <A> <Right> <Right> : "∀" # Universal quantifier
+<Multi_key> <E> <Right> <Right> : "∃" # Existential quantifier
+<Multi_key> <o> : "∘" # Ring Operator
+<Multi_key> <slash> <backslash> : "∧" # and
+<Multi_key> <backslash> <slash> : "∨" # or
+<Multi_key> <minus> <comma> : "¬" U00AC # Not sign
+<Multi_key> <parenleft> <plus> <parenright> : "⊕" # Circled plus
+<Multi_key> <parenleft> <minus> <parenright> : "⊖" # Circled minus
+<Multi_key> <parenleft> <asterisk> <parenright> : "⊗" # Circled times
+<Multi_key> <parenleft> <slash> <parenright> : "⊘" # Circled division slash
+<Multi_key> <minus> <greater> : "→" # Right arrow
+<Multi_key> <less> <minus> : "←" # Left arrow
+<Multi_key> <less> <minus> <greater> : "↔" # Left right arrow
+<Multi_key> <equal> <greater> : "⇒" # Right double arrow
+<Multi_key> <less> <equal> : "⇐" # Left double arrow
+<Multi_key> <less> <equal> <greater> : "⇔" # Left right double arrow
+<Multi_key> <less> <backslash> : "⩽" # Less than or equal
+<Multi_key> <greater> <slash> : "⩾" # Greater than or equal
+<Multi_key> <less> <underscore> : "≤" # Less than or equal
+<Multi_key> <greater> <underscore> : "≥" # Greater than or equal
+<Multi_key> <equal> <asciitilde> : "≅" # Ismorphism
+<Multi_key> <N> <N> : "ℕ" # Natural numbers
+<Multi_key> <Z> <Z> : "ℤ" # Integer numbers
+<Multi_key> <Q> <Q> : "ℚ" # Rational numbers
+<Multi_key> <R> <R> : "ℝ" # Real numbers
+<Multi_key> <asterisk> <l> : "λ" U03BB # Greek small letter lambda
+<Multi_key> <asterisk> <L> : "Λ" U039B # Greek capital letter lambda
+<Multi_key> <asterisk> <a> : "α" U03B1 # Greek small letter alpha
+<Multi_key> <asterisk> <b> : "β" U03B2 # Greek small letter beta
+<Multi_key> <asterisk> <p> : "π" U03C0 # Greek small letter pi
+<Multi_key> <asterisk> <P> : "Π" U03A0 # Greek capital letter pi
+<Multi_key> <asterisk> <S> : "Σ" U03A3 # Greek capital letter sigma
+<Multi_key> <asterisk> <U> : "Θ" U0398 # Greek capital letter theta
+<Multi_key> <asterisk> <V> : "Ω" U03A9 # Greek capital letter omega
+<Multi_key> <colon> <colon> : "∷" # Proportion
+<Multi_key> <greater> <minus> : "⤚" # Rightwards arrow tail
+<Multi_key> <minus> <less> : "⤙" # Leftwards arrow tail
+<Multi_key> <greater> <greater> <minus> : "⤜" # Rightwards double arrow tail
+<Multi_key> <minus> <less> <less> : "⤛" # Leftwards double arrow tail
